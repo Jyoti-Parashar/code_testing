@@ -363,3 +363,11 @@ for ( index = 0; index <= 100; index++ ) {
      }
     
         */
+
+
+
+     function sumOfTwo(a, b){
+        return a + b;
+    }
+    
+    console.log(sumOfTwo(3));
