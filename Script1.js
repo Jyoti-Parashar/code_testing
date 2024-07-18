@@ -71,6 +71,18 @@ console.log(` the sum of all the elements in the array nameLengths=${sum}`);
 //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
 //(i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
 
+let newWord=(word,n)=>{
+    let i=1;let wordArray=[];
+        do {
+            wordArray.push(word);
+            i++;
+        } while (i<=n);
+    return wordArray;
+    
+    }
+    console.log(newWord("Hello",5).join(''));
+
+/*
 function concatenatedWords(word,n){
 let i=1;
 let wordArray=[];
@@ -83,28 +95,8 @@ console.log(wordArray.join(''));
 
 }
 concatenatedWords("Hello",5);
-
-let newWord=(word,n)=>{
-let i=1;let wordArray=[];
-do {
-    wordArray.push(word);
-    i++;
-} while (i<=n);
-  return wordArray;
-//console.log(wordArray.join(''));
-}
-console.log(newWord("Hello",5).join(''));
-/*
-let wordArray1=[];
- wordArray1=(word,n)=>{
-    do {
-        wordArray1.push(word);
-         i++;
-     } while (i<=n);
-}
-
-console.log(wordArray1("hello",5).join(''));
 */
+
 
 
 //Write a function that takes two parameters, firstName and lastName, and returns a full name. 
